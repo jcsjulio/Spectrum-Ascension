@@ -4,16 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spectrum Ascension</title>
-    <script>
-      // Se estiver no GitHub Pages (raiz), redireciona automaticamente para a pasta /docs/ onde está o build
-      if (window.location.hostname.includes('github.io')) {
-        const pathSegments = window.location.pathname.split('/').filter(Boolean);
-        const repoName = pathSegments[0] || 'Spectrum-Ascension';
-        if (!window.location.pathname.includes('/docs')) {
-          window.location.href = '/' + repoName + '/docs/';
-        }
-      }
-    </script>
   </head>
   <body>
     <div id="root"></div>
