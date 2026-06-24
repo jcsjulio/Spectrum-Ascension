@@ -30,6 +30,7 @@ async function startServer() {
   } else {
     // Production mode
     console.log('Serving production build assets...');
+    app.use('/Spectrum-Ascension', express.static(path.resolve(__dirname, 'docs')));
     app.use(express.static(path.resolve(__dirname, 'docs')));
     app.get('*', (req, res) => {
       res.sendFile(path.resolve(__dirname, 'docs/index.html'));
