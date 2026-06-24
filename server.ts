@@ -30,9 +30,9 @@ async function startServer() {
   } else {
     // Production mode
     console.log('Serving production build assets...');
-    app.use(express.static(path.resolve(__dirname, 'dist')));
+    app.use(express.static(path.resolve(__dirname, 'docs')));
     app.get('*', (req, res) => {
-      res.sendFile(path.resolve(__dirname, 'dist/index.html'));
+      res.sendFile(path.resolve(__dirname, 'docs/index.html'));
     });
   }
 
