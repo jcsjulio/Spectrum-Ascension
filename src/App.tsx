@@ -1149,14 +1149,14 @@ export default function App() {
                 whileHover={{ scale: 1.05, rotate: 5 }}
                 whileTap={{ scale: 0.95, rotate: -5 }}
                 onClick={handlePrimaryClick}
-                className="w-56 h-56 rounded-[2.5rem] flex items-center justify-center cursor-pointer shadow-2xl relative z-20 group border-4 border-slate-800/80"
+                className="w-56 h-56 rounded-xl flex items-center justify-center cursor-pointer shadow-2xl relative z-20 group border-4 border-slate-100/90"
                 style={{
-                  background: `radial-gradient(circle at 30% 30%, #ffffff, ${getCurrentMixColor()} 65%, #000000)`,
-                  boxShadow: `0 0 45px ${getCurrentMixColor()}aa`
+                  background: 'linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)',
+                  boxShadow: `0 0 50px ${getCurrentMixColor()}90, inset 0 0 15px rgba(255, 255, 255, 0.8)`
                 }}
               >
-                <div className="absolute inset-0 rounded-[2.3rem] bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <span className="text-[11px] uppercase tracking-widest text-white font-mono font-bold bg-black/60 px-3 py-1 rounded-full backdrop-blur-md">
+                <div className="absolute inset-0 rounded-lg bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <span className="text-[11px] uppercase tracking-widest text-slate-900 font-mono font-bold bg-white/90 px-3 py-1.5 rounded-lg shadow-sm border border-slate-150 backdrop-blur-md">
                     REFRATAR
                   </span>
                 </div>
