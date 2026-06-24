@@ -1,0 +1,6 @@
+{
+  "name": "Spectrum Ascension",
+  "description": "Um jogo incremental moderno e minimalista focado na evolução de cores, mistura cromática e prestígios espectrais.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
